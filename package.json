@@ -7,5 +7,12 @@
     "url": "https://github.com/fixdio/react-native-locale.git"
   },
   "author": "Fixd",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.29.0",
+    "react-native-windows": "^0.29.0"
+  },
+  "devDependencies": {
+    "react-native-windows": "^0.37.0-rc.0"
+  }
 }
