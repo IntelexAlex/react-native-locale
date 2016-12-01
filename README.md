@@ -60,6 +60,14 @@ public class MainApplication extends Application implements ReactApplication {
 ...
 ```
 
+#### Windows
+
+1. In Visual Studio, right click solution > Add > Existing Proj and add the `RCTLocale.csproj` in `node_modules/react-native-locale/windows/RCTLocale/RCTLocale.csproj`.
+2. Right click the project > Add > Reference > RCTLocale checkmark
+3. Open up `MainPage.cs` in your app
+  - Add `using io.fixd.rctlocale;` to the usings at the top of the file
+  - Add `new RCTLocalePackage(),` to the `List<IReactPackage>` returned by the `Packages` method
+
 ## Usage
 
 For locale information:

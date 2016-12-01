@@ -84,7 +84,8 @@ namespace io.fixd.rctlocale
         {
             try
             {
-                DateTime date = new DateTime(Convert.ToInt64(timestamp));
+                DateTime epochTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+                DateTime date = epochTime.AddSeconds(Convert.ToInt64(timestamp)).ToLocalTime();
 
                 String dateTimeSpecifier = this.getDateTimeSpecifierFromString(dateStyle, timeStyle);
 
